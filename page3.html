@@ -63,7 +63,69 @@
             Исследователи Cisco обнаружили, что многошаговые состязательные атаки взламывают открытые ИИ-модели с вероятностью от 26% до 93%, что в 2–10 раз превышает эффективность простых одношаговых попыток. Эти угрозы эксплуатируют особенности поведения моделей, оставаясь невидимыми для традиционных систем безопасности.
         </tt9>
         <a href = "img/p9.png" target = "_blank">
-                <img src="img_small/p9.png" alt = "">
+                <figure class="ltx_table" id="S2.T1">
+                <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 1: </span>Open-weight model rankings, single- and multi-turn attack success rates (ASR), and the gap in ASR between the two techniques</figcaption>
+                <table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+                <thead class="ltx_thead">
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_tt"><span class="ltx_text ltx_font_bold">Model</span></th>
+                <th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Single-Turn ASR</span></th>
+                <th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Multi-Turn ASR</span></th>
+                <th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Security Gap</span></th>
+                </tr>
+                </thead>
+                <tbody class="ltx_tbody">
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t">Alibaba Qwen3-32B</th>
+                <td class="ltx_td ltx_align_center ltx_border_t">12.70%</td>
+                <td class="ltx_td ltx_align_center ltx_border_t">86.18%</td>
+                <td class="ltx_td ltx_align_center ltx_border_t">+73.48%</td>
+                </tr>
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row">Mistral Large-2</th>
+                <td class="ltx_td ltx_align_center">21.97%</td>
+                <td class="ltx_td ltx_align_center">92.78%</td>
+                <td class="ltx_td ltx_align_center">+70.81%</td>
+                </tr>
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row">Meta Llama 3.3-70B-Instruct</th>
+                <td class="ltx_td ltx_align_center">16.70%</td>
+                <td class="ltx_td ltx_align_center">87.02%</td>
+                <td class="ltx_td ltx_align_center">+70.32%</td>
+                </tr>
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row">DeepSeek v3.1</th>
+                <td class="ltx_td ltx_align_center">18.07%</td>
+                <td class="ltx_td ltx_align_center">79.65%</td>
+                <td class="ltx_td ltx_align_center">+61.58%</td>
+                </tr>
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row">Zhipu AI GLM-4.5-Air</th>
+                <td class="ltx_td ltx_align_center">7.42%</td>
+                <td class="ltx_td ltx_align_center">48.36%</td>
+                <td class="ltx_td ltx_align_center">+40.94%</td>
+                </tr>
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row">Google Gemma-3-1B-IT</th>
+                <td class="ltx_td ltx_align_center">15.33%</td>
+                <td class="ltx_td ltx_align_center">25.86%</td>
+                <td class="ltx_td ltx_align_center">+10.53%</td>
+                </tr>
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row">Microsoft Phi-4</th>
+                <td class="ltx_td ltx_align_center">6.35%</td>
+                <td class="ltx_td ltx_align_center">54.20%</td>
+                <td class="ltx_td ltx_align_center">+47.85%</td>
+                </tr>
+                <tr class="ltx_tr">
+                <th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_bb">OpenAI GPT-OSS-20b</th>
+                <td class="ltx_td ltx_align_center ltx_border_bb">6.35%</td>
+                <td class="ltx_td ltx_align_center ltx_border_bb">39.66%</td>
+                <td class="ltx_td ltx_align_center ltx_border_bb">+33.32%</td>
+                </tr>
+                </tbody>
+                </table>
+                </figure>
         </a>
         <tt10>
             Сравнение успешности одношаговых и многошаговых атак на разные модели. 
